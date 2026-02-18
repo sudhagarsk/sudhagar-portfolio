@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUDHAGAR G - Professional Resume</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #0f172a;
+            --accent-color: #0fe6e6;
+            --text-main: #334155;
+            --text-light: #64748b;
+            --bg-body: #f8fafc;
+            --bg-card: #ffffff;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .resume-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--bg-card);
+            padding: 60px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            border-radius: 12px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Decorative top bar */
+        .resume-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            letter-spacing: -0.025em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            color: var(--text-light);
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .contact-info a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .contact-info a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Section Global Styles */
+        section {
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        h2 i {
+            color: var(--accent-color);
+            font-size: 1.1rem;
+        }
+
+        /* Objective Block */
+        .objective-text {
+            font-size: 1rem;
+            color: var(--text-main);
+            text-align: justify;
+        }
+
+        /* Education & Projects List */
+        .info-block {
+            margin-bottom: 20px;
+        }
+
+        .info-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4px;
+        }
+
+        .info-title {
+            font-weight: 700;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+        }
+
+        .info-subtitle {
+            font-weight: 600;
+            color: var(--text-main);
+            font-size: 0.95rem;
+        }
+
+        .info-date {
+            font-weight: 600;
+            color: var(--text-light);
+            font-size: 0.85rem;
+        }
+
+        .info-description {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            margin-top: 5px;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .skill-category {
+            padding: 15px;
+            background-color: var(--bg-body);
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .skill-category-title {
+            font-weight: 700;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            color: var(--primary-color);
+            text-transform: uppercase;
+        }
+
+        .skill-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-item {
+            font-size: 0.85rem;
+            color: var(--text-main);
+            background: #fff;
+            padding: 4px 10px;
+            border-radius: 4px;
+            border: 1px solid var(--border-color);
+        }
+
+        /* Lists */
+        .custom-list {
+            list-style: none;
+        }
+
+        .custom-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+        .custom-list li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            .resume-container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .info-header {
+                flex-direction: column;
+            }
+
+            .info-date {
+                margin-top: 4px;
+            }
+        }
+
+        /* Home Button Styles */
+        .home-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .home-btn:hover {
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        /* Print optimization */
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+            }
+
+            .resume-container {
+                box-shadow: none;
+                max-width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+
+            .resume-container::before,
+            .home-btn {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Back to Home Button -->
+    <a href="index.html" class="home-btn">
+        <i class="fa-solid fa-house"></i> Back to Home
+    </a>
+
+    <div class="resume-container">
+        <!-- Header -->
+        <header>
+            <h1>SUDHAGAR G</h1>
+            <div class="contact-info">
+                <span><i class="fa-solid fa-phone"></i> +91 9025174494</span>
+                <span><i class="fa-solid fa-envelope"></i> <a
+                        href="mailto:sanjaisudha67@gmail.com">sanjaisudha67@gmail.com</a></span>
+                <span><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/sudha-gar-665595293/"
+                        target="_blank">LinkedIn</a></span>
+                <span><i class="fa-brands fa-github"></i> <a href="https://github.com/sudhagarsk"
+                        target="_blank">GitHub</a></span>
+            </div>
+        </header>
+
+        <!-- Objective -->
+        <section>
+            <h2><i class="fa-solid fa-bullseye"></i> OBJECTIVE</h2>
+            <div class="objective-text">
+                I am a motivated MCA student with a strong passion for full-stack web development. I have hands-on
+                experience in building responsive web applications and strive to leverage my technical skills in modern
+                web technologies.
+                My dedication to continuous learning and collaborative teamwork enables me to contribute effectively to
+                projects and drive
+                innovation in dynamic environments.
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section>
+            <h2><i class="fa-solid fa-graduation-cap"></i> EDUCATION</h2>
+
+            <div class="info-block">
+                <div class="info-header">
+                    <div class="info-title">MASTER OF COMPUTER APPLICATIONS (MCA)</div>
+                    <div class="info-date">2024 - Present</div>
+                </div>
+                <div class="info-subtitle">RVS College of Arts and Science, Sulur</div>
+                <div class="info-description">Current CGPA: 76.9</div>
+            </div>
+
+            <div class="info-block">
+                <div class="info-header">
+                    <div class="info-title">B.Sc Computer Science</div>
+                    <div class="info-date">Completed 2024</div>
+                </div>
+                <div class="info-subtitle">Dr. R.A.N.M. Arts and Science College, Erode</div>
+                <div class="info-description">CGPA: 7.62</div>
+            </div>
+
+            <div class="info-block">
+                <div class="info-header">
+                    <div class="info-title">HSC (Higher Secondary)</div>
+                    <div class="info-date">Completed 2021</div>
+                </div>
+                <div class="info-subtitle">Govt. Boys Hr. Sec. School, Uthangarai</div>
+                <div class="info-description">Percentage: 73.47%</div>
+            </div>
+        </section>
+
+        <!-- Tools and Skills -->
+        <section>
+            <h2><i class="fa-solid fa-code"></i> SOFTWARE TOOLS & SKILLS</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-category-title">Web Development</div>
+                    <div class="skill-list">
+                        <span class="skill-item">HTML5</span>
+                        <span class="skill-item">CSS3</span>
+                        <span class="skill-item">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">Frameworks & Libraries</div>
+                    <div class="skill-list">
+                        <span class="skill-item">React.js</span>
+                        <span class="skill-item">Node.js</span>
+                        <span class="skill-item">Express.js</span>
+                        <span class="skill-item">Bootstrap 5</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">Programming</div>
+                    <div class="skill-list">
+                        <span class="skill-item">C Programming</span>
+                        <span class="skill-item">Python</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">Technical Proficiency</div>
+                    <div class="skill-list">
+                        <span class="skill-item">MS Word</span>
+                        <span class="skill-item">PowerPoint</span>
+                        <span class="skill-item">Excel</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">Soft Skills</div>
+                    <div class="skill-list">
+                        <span class="skill-item">Time Management</span>
+                        <span class="skill-item">Teamwork</span>
+                        <span class="skill-item">Collaboration</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section>
+            <h2><i class="fa-solid fa-briefcase"></i> PROJECTS</h2>
+
+            <div class="info-block">
+                <div class="info-title">Personal Portfolio Website</div>
+                <div class="info-description">
+                    Developed a responsive personal portfolio website using HTML, CSS, Bootstrap 5, and JavaScript. The
+                    site effectively showcases technical skills, projects, and achievements with a modern UI.
+                </div>
+            </div>
+
+            <div class="info-block" style="margin-top: 15px;">
+                <div class="info-title">Bad Bank Application</div>
+                <div class="info-description">
+                    Built a full-stack banking application simulating core functions like account creation, deposits,
+                    and withdrawals.
+                    Implemented using React.js for frontend and Node.js/Express.js APIs with MongoDB Atlas for data
+                    management.
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates -->
+        <section>
+            <h2><i class="fa-solid fa-certificate"></i> CERTIFICATIONS</h2>
+            <ul class="custom-list">
+                <li>Certified C programming - Great Learning Platform (Oct 2024)</li>
+                <li>JavaScript: Getting Started with JavaScript Programming (July 2025)</li>
+                <li>Soft Skills Training conducted by Infosys BPM Ltd. (June 2025)</li>
+                <li>Front-End Development Intern - Cognifyz Technologies (Oct 2025)</li>
+            </ul>
+        </section>
+
+        <!-- Achievements & Languages -->
+        <section style="display: grid; grid-template-columns: 60% 35%; gap: 5%;">
+            <div>
+                <h2><i class="fa-solid fa-trophy"></i> ACHIEVEMENTS</h2>
+                <ul class="custom-list">
+                    <li><strong>First Prize Winner:</strong> Intercollege Quiz Competition at Suguna College, Coimbatore
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2><i class="fa-solid fa-language"></i> LANGUAGES</h2>
+                <ul class="custom-list">
+                    <li>Tamil [Speak, Read, Write]</li>
+                    <li>English [Speak, Read, Write]</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>

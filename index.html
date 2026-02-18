@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Project</title>
+  <!-- Font Awesome CDN for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/kMVq2O+P+QnNkjRMAZ2R5DrByi6VJSiY+eRXmcDgF67vEn6Yr5qfQ68Fb8uqis3ozJOGC1Y63iJcw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- bootstrap css cdn link  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+  <!-- custom css file -->
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- bootstrap icon cdn link  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+
+  <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- jquery cdn link  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- navbar starts -->
+  <nav id="navbar-top" class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container-fluid px-5">
+      <a class="navbar-brand fw-bold fs-2" href="#" style="color: #0fe6e6">
+        <i><span class="first-letter">SUDHAGAR</span></i>
+      </a>
+      <button class="navbar-toggler nav-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-blockquote-right"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#About">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- navbar ends-->
+
+  <!-- home section starts  -->
+  <section class="home pt-5 pb-5" id="home">
+    <div class="container">
+      <div class="row justify-content-evenly align-items-center">
+        <div class="col-12 col-md-6 text-center text-md-start" data-aos="slide-right">
+          <h2 style="color: #000000">
+            Hello! I Am <br /><span class="c-orange">SUDHAGAR</span>
+          </h2>
+          <p class="text-dark">
+            FRONT END DEVELOPER
+          </p>
+          <a class="text-decoration-none" href="./Resume - Sudhagar G.html" target="_blank">
+            <button class="c-btn mt-3 mt-md-0 ms-md-4 py-2 px-4 rounded-pill">View Resume</button>
+          </a>
+        </div>
+        <div class="col-12 col-md-4 text-center text-md-end d-none d-md-block">
+          <img src="./images/jeery.jpeg" class="img-fluid" alt="Banner Image" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- home section ends here -->
+
+  <!-- About section starts -->
+  <section id="About" class="about-me-section py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left side with image -->
+        <div class="col-12 col-md-5 text-center">
+          <img src="./images/jeery.jpeg" class="img-fluid rounded" alt="Sudhagar Picture" />
+        </div>
+        <!-- Right side with text content -->
+        <div class="col-12 col-md-7 mt-4 mt-md-0">
+          <h2>About Me</h2>
+          <p>
+            Hi, I'm Sudhagar, a passionate front-end developer currently pursuing an MCA. I have a B.Sc. in Computer
+            Science and experience in Bootstrap 5. I’m continuously learning new skills like React and JavaScript to
+            improve my web development expertise. I love to create user-friendly and responsive websites. Let's build
+            something amazing together!
+          </p>
+
+          <!-- Social Media Icons with Logos -->
+          <div class="social-icons">
+            <a href="https://github.com/sudhagarsk" target="_blank" title="GitHub">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub Logo"
+                class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/sudha-gar-665595293/" target="_blank" title="LinkedIn">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg" alt="LinkedIn Logo"
+                class="social-icon">
+            </a>
+          </div>
+
+          <a class="text-decoration-none" href="#you">
+            <button class="c-btn mt-4 py-2 px-4 rounded-pill">Self Intro</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About section ends here -->
+
+  <!-- Introduce my self start -->
+  <section id="you" class="intro-section py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left side with text content -->
+        <div class="col-12 col-md-6" data-aos="fade-right">
+          <h2 id="self" class="mb-4">Introduce Myself</h2>
+          <p class="mb-4">
+            Welcome to my personal introduction! In this video, I share my journey as a developer,
+            my technical background, and the passion that drives me to create exceptional web experiences.
+            I believe in continuous learning and staying updated with the latest industry trends to
+            deliver high-quality solutions.
+          </p>
+          <div class="intro-features">
+            <div class="d-flex align-items-center mb-3">
+              <i class="fas fa-check-circle me-3" style="color: #0fe6e6;"></i>
+              <span>MCA Student & Tech Enthusiast</span>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+              <i class="fas fa-check-circle me-3" style="color: #0fe6e6;"></i>
+              <span>Passionate Front-end Developer</span>
+            </div>
+          </div>
+        </div>
+        <!-- Right side with video -->
+        <div class="col-12 col-md-6 mt-4 mt-md-0" data-aos="fade-left">
+          <div class="iframe-container">
+            <iframe src="https://www.youtube.com/embed/nkRe25BoSCs?si=zK6g8y2S3j8HYSdo" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Introduce my self End -->
+
+  <!--education start-->
+
+  <section id="education" class="education-section py-5">
+    <div class="container">
+      <h2 class="education-title text-center mb-5">My Education</h2>
+      <div class="row g-4">
+        <!-- SSLC Box -->
+        <div class="col-lg-3 col-md-6">
+          <div class="education-box text-center p-4">
+            <div class="icon mb-3">
+              <i class="fas fa-graduation-cap fa-3x"></i>
+            </div>
+            <h4>SSLC</h4>
+            <p>Govt Boys Hr.Sec School</p>
+            <p>Uthangarai, Location</p>
+            <p>62%</p>
+            <p>Year: 2018-2019</p>
+          </div>
+        </div>
+
+        <!-- HSC Box -->
+        <div class="col-lg-3 col-md-6">
+          <div class="education-box text-center p-4">
+            <div class="icon mb-3">
+              <i class="fas fa-graduation-cap fa-3x"></i>
+            </div>
+            <h4>HSC</h4>
+            <p>Govt Boys Hr.Sec School</p>
+            <p>Uthangarai, Location</p>
+            <p>73%</p>
+            <p>Year: 2021-2022</p>
+          </div>
+        </div>
+
+        <!-- UG Degree Box -->
+        <div class="col-lg-3 col-md-6">
+          <div class="education-box text-center p-4">
+            <div class="icon mb-3">
+              <i class="fas fa-university fa-3x"></i>
+            </div>
+            <h4>UG Degree</h4>
+            <p>Dr.R.A.N.M ARTS & SCIENCE COLLEGE Erode</p>
+            <p>B.Sc. Computer Science</p>
+            <p>Year: 2021-2024</p>
+          </div>
+        </div>
+
+        <!-- MCA Box -->
+        <div class="col-lg-3 col-md-6">
+          <div class="education-box text-center p-4">
+            <div class="icon mb-3">
+              <i class="fas fa-laptop-code fa-3x"></i>
+            </div>
+            <h4>MCA</h4>
+            <p>Master of Computer Applications</p>
+            <p>RVS College, Coimbatore</p>
+            <p>Expected Graduation: 2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--education end-->
+  <!-- skill section starts -->
+  <section class="skill mt-5 py-5" id="Skills">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-12">
+          <h1 class="skills-title">Skills</h1>
+          <p class="para mt-3">
+            I am a dedicated and passionate front-end developer with a strong foundation in HTML, CSS, Bootstrap, and
+            JavaScript.
+            Currently pursuing my MCA, I have a B.Sc. in Computer Science, which has equipped me with a solid
+            understanding of web
+            development principles and best practices.
+          </p>
+        </div>
+      </div>
+      <div class="row mt-5 g-4">
+        <!-- HTML & CSS -->
+        <div class="col-12 col-md-6 col-lg-3 text-center">
+          <div class="skill-card p-4">
+            <i class="fab fa-html5 skill-icon"></i>
+            <span class="text">HTML & CSS</span>
+            <div class="progress mt-3">
+              <div class="progress-bar text-dark" style="width: 75%;">75%</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="col-12 col-md-6 col-lg-3 text-center">
+          <div class="skill-card p-4">
+            <i class="fab fa-js skill-icon"></i>
+            <span class="text">JavaScript</span>
+            <div class="progress mt-3">
+              <div class="progress-bar text-dark" style="width: 50%;">50%</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- C Programming -->
+        <div class="col-12 col-md-6 col-lg-3 text-center">
+          <div class="skill-card p-4">
+            <i class="fab fa-cuttlefish skill-icon"></i>
+            <span class="text">C Programming</span>
+            <div class="progress mt-3">
+              <div class="progress-bar text-dark" style="width: 50%;">50%</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Java -->
+        <div class="col-12 col-md-6 col-lg-3 text-center">
+          <div class="skill-card p-4">
+            <i class="fab fa-java skill-icon"></i>
+            <span class="text">Java</span>
+            <div class="progress mt-3">
+              <div class="progress-bar text-dark" style="width: 45%;">45%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- skill section end here -->
+
+  <!-- project section starts here -->
+  <section class="portfolio" id="Projects">
+    <div class="heading text-center pt-5">
+      <h1>Projects</h1>
+      <h3>Check My Projects</h3>
+    </div>
+
+    <div class="portfolio-body mt-4">
+      <div class="container">
+        <div class="row justify-content-evenly g-4">
+          <!-- Project 1 -->
+          <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up">
+            <div class="card h-100">
+              <img src="./images/gif image.gif" class="card-img-top" alt="Project 1" />
+              <div class="card-body text-center">
+                <h4 class="card-title">Balls Move</h4>
+                <div class="mt-auto">
+                  <a href="https://github.com/sudhagarsk/ball_move_game" class="link me-3"><i class="fas fa-code"></i>
+                    Code</a>
+                  <a href="https://sudhagarsk.github.io/ball_move_game/ball1.html" class="link"><i
+                      class="fas fa-eye"></i> View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up">
+            <div class="card h-100">
+              <img src="./images/gif image.gif" class="card-img-top" alt="Project 2" />
+              <div class="card-body text-center">
+                <h4 class="card-title">Pacman</h4>
+                <div class="mt-auto">
+                  <a href="https://github.com/sudhagarsk/pacman-1" class="link me-3"><i class="fas fa-code"></i>
+                    Code</a>
+                  <a href="https://sudhagarsk.github.io/pacman-1/" class="link"><i class="fas fa-eye"></i> View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up">
+            <div class="card h-100">
+              <img src="./images/gif image.gif" class="card-img-top" alt="Project 3" />
+              <div class="card-body text-center">
+                <h4 class="card-title">Eye Move</h4>
+                <div class="mt-auto">
+                  <a href="https://github.com/sudhagarsk/Eye-move" class="link me-3"><i class="fas fa-code"></i>
+                    Code</a>
+                  <a href="https://sudhagarsk.github.io/Eye-move/" class="link"><i class="fas fa-eye"></i> View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up">
+            <div class="card h-100">
+              <img src="./images/gif image.gif" class="card-img-top" alt="Project 4" />
+              <div class="card-body text-center">
+                <h4 class="card-title">Boston</h4>
+                <div class="mt-auto">
+                  <a href="https://github.com/sudhagarsk/Boston" class="link me-3"><i class="fas fa-code"></i> Code</a>
+                  <a href="https://sudhagarsk.github.io/Boston/" class="link"><i class="fas fa-eye"></i> View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up">
+            <div class="card h-100">
+              <img src="./images/gif image.gif" class="card-img-top" alt="Project 5" />
+              <div class="card-body text-center">
+                <h4 class="card-title">Word Count</h4>
+                <div class="mt-auto">
+                  <a href="https://github.com/sudhagarsk/Word-count" class="link me-3"><i class="fas fa-code"></i>
+                    Code</a>
+                  <a href="https://sudhagarsk.github.io/Word-count/" class="link"><i class="fas fa-eye"></i> View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up">
+            <div class="card h-100">
+              <img src="./images/gif image.gif" class="card-img-top" alt="Project 6" />
+              <div class="card-body text-center">
+                <h4 class="card-title">Route Map</h4>
+                <div class="mt-auto">
+                  <a href="https://github.com/sudhagarsk/route-map" class="link me-3"><i class="fas fa-code"></i>
+                    Code</a>
+                  <a href="https://sudhagarsk.github.io/route-map/" class="link"><i class="fas fa-eye"></i> View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 7 -->
+          <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up">
+            <div class="card h-100">
+              <img src="./images/gif image.gif" class="card-img-top" alt="Project 7" />
+              <div class="card-body text-center">
+                <h4 class="card-title">Ball movement</h4>
+                <div class="mt-auto">
+                  <a href="https://github.com/sudhagarsk/Balls-movement" class="link me-3"><i class="fas fa-code"></i>
+                    Code</a>
+                  <a href="https://sudhagarsk.github.io/Balls-movement/" class="link"><i class="fas fa-eye"></i>
+                    View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 8 -->
+          <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up">
+            <div class="card h-100">
+              <img src="./images/gif image.gif" class="card-img-top" alt="Project 8" />
+              <div class="card-body text-center">
+                <h4 class="card-title">Many Pacman</h4>
+                <div class="mt-auto">
+                  <a href="https://github.com/sudhagarsk/many-pacman" class="link me-3"><i class="fas fa-code"></i>
+                    Code</a>
+                  <a href="https://sudhagarsk.github.io/many-pacman/" class="link"><i class="fas fa-eye"></i> View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 9 -->
+          <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up">
+            <div class="card h-100">
+              <img src="./images/gif image.gif" class="card-img-top" alt="Project 9" />
+              <div class="card-body text-center">
+                <h4 class="card-title">Tower</h4>
+                <div class="mt-auto">
+                  <a href="https://github.com/sudhagarsk/tower" class="link me-3"><i class="fas fa-code"></i> Code</a>
+                  <a href="https://sudhagarsk.github.io/tower/" class="link"><i class="fas fa-eye"></i> View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add more projects in a similar format -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- project section ends here -->
+
+
+  <!-- contact section starts -->
+  <section class="contact py-5" id="contact">
+    <div class="heading text-center">
+      <h1>Contact Us</h1>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row justify-content-evenly">
+        <!-- Contact Details -->
+        <div class="col-md-5 col-12 contact-details mb-4 mb-md-0">
+          <div class="d-flex mb-3">
+            <i class="bi bi-geo-alt-fill me-3"></i>
+            <p>Coimbatore, RVS CAS, Sulur</p>
+          </div>
+
+          <div class="d-flex mb-3">
+            <i class="bi bi-send-fill me-3"></i>
+            <p>sanjaisudha67@gmail.com</p>
+          </div>
+
+          <div class="d-flex mb-3">
+            <i class="bi bi-telephone-fill me-3"></i>
+            <p>+91 9025174494</p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-md-5 col-12">
+          <div class="contact-form">
+            <div class="mb-3">
+              <input type="text" class="form-control" id="name" placeholder="Name" />
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="email" placeholder="E-mail" />
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="subject" placeholder="Subject" />
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" id="message" placeholder="Message" rows="5"></textarea>
+            </div>
+            <button class="btn btn-primary mt-3 py-2 px-5 rounded-pill" type="submit" onclick="sendMail()">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact section ends here -->
+
+  <!-- footer section starts  -->
+  <footer class="text-center text-muted py-4">
+    <h3 class="text-white pt-4">Portfolio</h3>
+
+    <!-- Navigation Links -->
+    <div class="link-group d-flex flex-wrap justify-content-center mt-5">
+      <a href="#home" class="px-3">Home</a>
+      <div class="vr"></div>
+      <a href="#About" class="px-3">About</a>
+      <div class="vr"></div>
+      <a href="#education" class="px-3">Education</a>
+      <div class="vr"></div>
+      <a href="#Skills" class="px-3">Skills</a>
+      <div class="vr"></div>
+      <a href="#Projects" class="px-3">Projects</a>
+      <div class="vr"></div>
+      <a href="#contact" class="px-3">Contact Us</a>
+    </div>
+
+    <!-- Social Media Links -->
+    <div class="social-links mt-5">
+      <a href="https://github.com/sudhagarsk" target="_blank">
+        <button class="rounded-pill github">
+          <i class="bi bi-github"></i>
+        </button>
+      </a>
+      <a href="https://www.linkedin.com/in/sudha-gar-665595293/" target="_blank">
+        <button class="rounded-pill linkedin">
+          <i class="bi bi-linkedin"></i>
+        </button>
+      </a>
+      <a href="https://www.instagram.com/lovely_dude_offl/" target="_blank">
+        <button class="rounded-pill instagram">
+          <i class="bi bi-instagram"></i>
+        </button>
+      </a>
+    </div>
+  </footer>
+
+  <!-- footer section ends here -->
+
+  <!-- bootstrap javascript cdn link  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+  <!-- AOS library javascript link -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      offset: 50,
+      disable: 'mobile', // Use 'mobile' instead of 'phone' for standard AOS behavior
+    });
+  </script>
+
+  <!-- Custom JavaScript Files -->
+  <script src="js/script.js"></script>
+  <script src="main.js"></script>
+
+  <!-- EmailJS for contact form submission -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "f398-C2PDu5qvThzc",
+      });
+    })();
+  </script>
+
+  <!-- Skill Scroll Animation -->
+  <script>
+    function animateOnScroll() {
+      const boxes = document.querySelectorAll('.education-box');
+      const triggerHeight = window.innerHeight / 1.2;
+
+      boxes.forEach(box => {
+        const boxTop = box.getBoundingClientRect().top;
+        if (boxTop < triggerHeight) {
+          box.classList.add('animate');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', animateOnScroll);
+    window.addEventListener('load', animateOnScroll);
+  </script>
+
+</body>
+
+</html>
